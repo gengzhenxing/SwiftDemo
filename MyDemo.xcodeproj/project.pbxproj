@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		660CDBEE1C2F609700C58926 /* MyHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660CDBED1C2F609700C58926 /* MyHomeTableViewController.swift */; };
+		660CDBF01C2F638700C58926 /* MyHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660CDBEF1C2F638700C58926 /* MyHomeTableViewCell.swift */; };
 		66EE47861C2EE2F80007D6C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EE47851C2EE2F80007D6C9 /* AppDelegate.swift */; };
-		66EE47881C2EE2F80007D6C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EE47871C2EE2F80007D6C9 /* ViewController.swift */; };
 		66EE478B1C2EE2F80007D6C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66EE47891C2EE2F80007D6C9 /* Main.storyboard */; };
 		66EE478D1C2EE2F80007D6C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66EE478C1C2EE2F80007D6C9 /* Assets.xcassets */; };
 		66EE47901C2EE2F80007D6C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66EE478E1C2EE2F80007D6C9 /* LaunchScreen.storyboard */; };
@@ -34,9 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		660CDBED1C2F609700C58926 /* MyHomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHomeTableViewController.swift; sourceTree = "<group>"; };
+		660CDBEF1C2F638700C58926 /* MyHomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHomeTableViewCell.swift; sourceTree = "<group>"; };
 		66EE47821C2EE2F80007D6C9 /* MyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66EE47851C2EE2F80007D6C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		66EE47871C2EE2F80007D6C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		66EE478A1C2EE2F80007D6C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		66EE478C1C2EE2F80007D6C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66EE478F1C2EE2F80007D6C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,7 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				66EE47851C2EE2F80007D6C9 /* AppDelegate.swift */,
-				66EE47871C2EE2F80007D6C9 /* ViewController.swift */,
+				660CDBED1C2F609700C58926 /* MyHomeTableViewController.swift */,
+				660CDBEF1C2F638700C58926 /* MyHomeTableViewCell.swift */,
 				66EE47891C2EE2F80007D6C9 /* Main.storyboard */,
 				66EE478C1C2EE2F80007D6C9 /* Assets.xcassets */,
 				66EE478E1C2EE2F80007D6C9 /* LaunchScreen.storyboard */,
@@ -256,7 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66EE47881C2EE2F80007D6C9 /* ViewController.swift in Sources */,
+				660CDBEE1C2F609700C58926 /* MyHomeTableViewController.swift in Sources */,
+				660CDBF01C2F638700C58926 /* MyHomeTableViewCell.swift in Sources */,
 				66EE47861C2EE2F80007D6C9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +488,7 @@
 				66EE47AC1C2EE2F80007D6C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		66EE47AD1C2EE2F80007D6C9 /* Build configuration list for PBXNativeTarget "MyDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +497,7 @@
 				66EE47AF1C2EE2F80007D6C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		66EE47B01C2EE2F80007D6C9 /* Build configuration list for PBXNativeTarget "MyDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +506,7 @@
 				66EE47B21C2EE2F80007D6C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
