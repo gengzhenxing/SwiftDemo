@@ -7,15 +7,29 @@
 //
 
 import UIKit
+import Alamofire
 
 class MyHomeTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.getHomeInfo()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    // MARK: - get network info
+    private func getHomeInfo() {
+        Alamofire.request(.GET, "http://news-at.zhihu.com/api/4/news/latest", parameters: nil)
+            .responseJSON { response in
+                
+                if let JSON = response.result.value {
+                    print("JSON: \(JSON)")
+                }
+        }
     }
 
     // MARK: - Table view data source
@@ -28,14 +42,14 @@ class MyHomeTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("MyHomeTableViewCell", forIndexPath: indexPath)
 
         
         return cell
     }
     
     
-    //MARK: Table view delegate
+    // MARK: Table view delegate
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 80
     }
