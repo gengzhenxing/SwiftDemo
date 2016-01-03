@@ -10,6 +10,8 @@ import UIKit
 import Alamofire
 
 class MyHomeTableViewController: UITableViewController {
+    
+    var result:[HomeInfoModel]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +31,12 @@ class MyHomeTableViewController: UITableViewController {
             .responseJSON { response in
                 
                 if let JSON = response.result.value {
-                    print("JSON: \(JSON)")
+                    if let array:[Dictionary<String,AnyObject>] = JSON["stories"] as? [Dictionary<String,AnyObject>] {
+                        self.result = array.map({ (item) -> HomeInfoModel in
+                            let model = HomeInfoModel(dictionary:item)
+                            return model
+                        })
+                    }
                 }
         }
     }
