@@ -10,6 +10,7 @@
 		007B69DC01551EB19BC31F5D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33357243647ED29E5BFF755A /* Pods.framework */; };
 		660CDBEE1C2F609700C58926 /* MyHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660CDBED1C2F609700C58926 /* MyHomeTableViewController.swift */; };
 		660CDBF01C2F638700C58926 /* MyHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660CDBEF1C2F638700C58926 /* MyHomeTableViewCell.swift */; };
+		66DB6B261C395EB100BB38CF /* HomeInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DB6B251C395EB100BB38CF /* HomeInfoModel.swift */; };
 		66EE47861C2EE2F80007D6C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EE47851C2EE2F80007D6C9 /* AppDelegate.swift */; };
 		66EE478B1C2EE2F80007D6C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66EE47891C2EE2F80007D6C9 /* Main.storyboard */; };
 		66EE478D1C2EE2F80007D6C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66EE478C1C2EE2F80007D6C9 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 		660CDBED1C2F609700C58926 /* MyHomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHomeTableViewController.swift; sourceTree = "<group>"; };
 		660CDBEF1C2F638700C58926 /* MyHomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHomeTableViewCell.swift; sourceTree = "<group>"; };
 		6669804D1C2F6C2400F870FD /* MyDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		66DB6B251C395EB100BB38CF /* HomeInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInfoModel.swift; sourceTree = "<group>"; };
 		66EE47821C2EE2F80007D6C9 /* MyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66EE47851C2EE2F80007D6C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66EE478A1C2EE2F80007D6C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				66EE47851C2EE2F80007D6C9 /* AppDelegate.swift */,
 				660CDBED1C2F609700C58926 /* MyHomeTableViewController.swift */,
 				660CDBEF1C2F638700C58926 /* MyHomeTableViewCell.swift */,
+				66DB6B251C395EB100BB38CF /* HomeInfoModel.swift */,
 				66EE47891C2EE2F80007D6C9 /* Main.storyboard */,
 				66EE478C1C2EE2F80007D6C9 /* Assets.xcassets */,
 				66EE478E1C2EE2F80007D6C9 /* LaunchScreen.storyboard */,
@@ -336,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66DB6B261C395EB100BB38CF /* HomeInfoModel.swift in Sources */,
 				660CDBEE1C2F609700C58926 /* MyHomeTableViewController.swift in Sources */,
 				660CDBF01C2F638700C58926 /* MyHomeTableViewCell.swift in Sources */,
 				66EE47861C2EE2F80007D6C9 /* AppDelegate.swift in Sources */,
