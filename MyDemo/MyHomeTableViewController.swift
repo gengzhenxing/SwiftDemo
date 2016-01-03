@@ -15,6 +15,8 @@ class MyHomeTableViewController: UITableViewController {
         super.viewDidLoad()
         
         self.getHomeInfo()
+        
+         self.tableView.tableFooterView = UIView()
     }
 
     override func didReceiveMemoryWarning() {
