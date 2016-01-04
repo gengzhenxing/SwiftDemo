@@ -21,5 +21,9 @@ class MyHomeTableViewCell: UITableViewCell {
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-
+    
+    func configCellWithModel(model:HomeInfoModel) {
+        self.homeLabel.text = model.title
+        self.homeImageView .sd_setImageWithURL(model.imageUrl, placeholderImage:nil)
+    }
 }

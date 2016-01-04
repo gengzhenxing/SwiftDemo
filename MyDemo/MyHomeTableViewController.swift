@@ -11,7 +11,7 @@ import Alamofire
 
 class MyHomeTableViewController: UITableViewController {
     
-    var result:[HomeInfoModel]?
+    var result = [HomeInfoModel]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +36,8 @@ class MyHomeTableViewController: UITableViewController {
                             let model = HomeInfoModel(dictionary:item)
                             return model
                         })
+                        
+                        self.tableView.reloadData()
                     }
                 }
         }
@@ -43,16 +45,16 @@ class MyHomeTableViewController: UITableViewController {
 
     // MARK: - Table view data source
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return result.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("MyHomeTableViewCell", forIndexPath: indexPath)
-
+        let cell:MyHomeTableViewCell = tableView.dequeueReusableCellWithIdentifier("MyHomeTableViewCell", forIndexPath: indexPath) as! MyHomeTableViewCell
+        cell.configCellWithModel(self.result[indexPath.row])
         
         return cell
     }
