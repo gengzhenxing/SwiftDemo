@@ -44,23 +44,30 @@
                                                 <constraint firstAttribute="width" constant="60" id="mcQ-6M-W10"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTX-iU-fEF">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTX-iU-fEF">
                                             <rect key="frame" x="100" y="10" width="480" height="60"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="60" id="c8Q-M6-o9f"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="c8Q-M6-o9f"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="MQF-jI-TFb" secondAttribute="bottom" constant="9.5" id="0A1-4Y-2D3"/>
                                         <constraint firstItem="MQF-jI-TFb" firstAttribute="leading" secondItem="auz-3L-KDu" secondAttribute="leading" constant="20" id="2lc-g7-anK"/>
                                         <constraint firstItem="KTX-iU-fEF" firstAttribute="top" secondItem="auz-3L-KDu" secondAttribute="top" constant="10" id="K3c-s1-Ft9"/>
                                         <constraint firstItem="MQF-jI-TFb" firstAttribute="top" secondItem="auz-3L-KDu" secondAttribute="top" constant="10" id="OdF-8F-kSX"/>
                                         <constraint firstAttribute="trailing" secondItem="KTX-iU-fEF" secondAttribute="trailing" constant="20" id="cuN-Xd-Rde"/>
+                                        <constraint firstAttribute="bottom" secondItem="KTX-iU-fEF" secondAttribute="bottom" constant="9.5" id="hW6-46-aZA"/>
                                         <constraint firstItem="KTX-iU-fEF" firstAttribute="leading" secondItem="MQF-jI-TFb" secondAttribute="trailing" constant="20" id="uso-Kw-uvS"/>
                                     </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="0A1-4Y-2D3"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="homeImageView" destination="MQF-jI-TFb" id="kWB-b8-Yz8"/>

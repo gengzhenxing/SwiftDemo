@@ -12,6 +12,8 @@ import Alamofire
 class MyHomeTableViewController: UITableViewController {
     
     var result = [HomeInfoModel]()
+    
+    var myCell:MyHomeTableViewCell!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +21,8 @@ class MyHomeTableViewController: UITableViewController {
         self.getHomeInfo()
         
          self.tableView.tableFooterView = UIView()
+        
+        myCell = tableView.dequeueReusableCellWithIdentifier("MyHomeTableViewCell") as! MyHomeTableViewCell
     }
 
     override func didReceiveMemoryWarning() {
@@ -61,7 +65,13 @@ class MyHomeTableViewController: UITableViewController {
     
     
     // MARK: Table view delegate
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 80
+    override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        let model = result[indexPath.row]
+        myCell.homeLabel.text = model.title
+        return myCell.contentView.systemLayoutSizeFittingSize(UILayoutFittingCompressedSize).height + 1
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
     }
 }
